@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace AleVerDes.Voxels
 {
-    public struct VoxelTexturesUV
+    public struct VoxelUV
     {
         public Vector2 Top;
         public Vector2 Bottom;

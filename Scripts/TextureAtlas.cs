@@ -111,9 +111,9 @@ namespace AleVerDes.Voxels
         }
 #endif
 
-        public VoxelTexturesUV GetVoxelTexturesUV(int voxelIndex, int variantSeed = 0)
+        public VoxelUV GetVoxelTexturesUV(int voxelIndex, int variantSeed = 0)
         {
-            var voxelTexturesUV = new VoxelTexturesUV();
+            var voxelTexturesUV = new VoxelUV();
             var voxelData = _voxelData[voxelIndex];
             var variantIndex = variantSeed % voxelData.VariantsTextures.Length;
             var variantTextures = voxelData.VariantsTextures[variantIndex];
@@ -136,6 +136,11 @@ namespace AleVerDes.Voxels
             public int TopTextureIndex;
             public int BottomTextureIndex;
             public int SideTextureIndex;
+        }
+        
+        private struct MyStruct
+        {
+            
         }
     }
 }
